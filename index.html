@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Side Menu</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 0;
+        }
+
+        section p {
+            padding: 10px;
+        }
+
+        header {
+            padding: 40px;
+            font-size: 20px;
+            background-color: #8a8a8a;
+            color: white;
+            text-align: center;
+        }
+
+        .overlay {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: black;
+            overflow-x: hidden;
+            transition: 0.5s;
+        }
+
+        .overlay-content {
+            position: relative;
+            top: 10%;
+            width: 100%;
+            text-align: center;
+            margin-top: 25px;
+
+        }
+
+        .overlay a {
+            padding: 10px;
+            text-decoration: none;
+            font-size: 35px;
+            color: beige;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .overlay a:hover {
+            color: white;
+        }
+
+        .overlay a:focus {
+            color: yellow;
+        }
+
+        .burger {
+            font-size: 35px;
+            cursor: pointer;
+            background-color: rgb(164, 191, 214);
+        }
+
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            color: aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>WELCOME</h1>
+    </header>
+    <nav id="myNav" class="overlay">
+        <a href="#" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Gallery</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+
+    <section>
+        <div id="myBurger" onclick="openNav()" class="burger">&#9776; MENU</div>
+        <h2>About</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa quam odit quia sed quos voluptatum
+            praesentium optio, sunt quaerat dignissimos temporibus maxime assumenda aut. Facilis dolorum porro corrupti
+            cumque alias!
+            Tempora quis alias quasi velit! Necessitatibus, ea! Totam consequatur qui veniam, unde ipsum voluptatem
+            fugit, ex soluta ea exercitationem esse minus. Dicta odit nostrum, quis similique odio mollitia qui a.
+            Molestiae reprehenderit architecto minima est alias, eos excepturi officia doloremque delectus expedita
+            cupiditate rem nihil dignissimos non facere at earum hic eveniet. Aspernatur minima iure vitae quae
+            perferendis unde natus.
+            Vero, doloribus, voluptate iusto quibusdam assumenda eveniet nobis maxime facilis mollitia, illum non
+            recusandae. Quae ratione, velit cum ab dolorum inventore omnis, saepe suscipit, maiores harum sint error
+            nobis ex.
+            Mollitia ducimus cupiditate, dicta nesciunt quaerat dolor reprehenderit quo, animi qui illo aperiam maiores
+            deserunt consequuntur. Possimus, fugiat reiciendis, vero velit aut dolor fugit blanditiis minima harum culpa
+            dolorem animi.
+            Quidem consectetur rem harum aut facilis optio id aliquam expedita! Sit dicta eum ad veniam ab, voluptate
+            laborum odit ut numquam atque quasi eius animi iusto perspiciatis, maxime quod nobis!
+            Corporis optio excepturi est necessitatibus odit aliquid, doloremque ut officiis perferendis velit! Dolorem
+            ipsum, dolor, labore velit quas laborum delectus sint fugit tenetur, facilis deserunt consequatur beatae
+            architecto ipsam quod.
+            Sunt accusantium unde sequi distinctio tenetur sint accusamus mollitia laborum, natus nobis neque iusto,
+            ullam repellendus officiis beatae earum odio asperiores obcaecati hic? Blanditiis ratione quisquam natus
+            libero dolorem iste.
+            Praesentium est aperiam ipsam autem eum in nesciunt debitis. Quos placeat optio laborum. Minus ad soluta
+            mollitia porro hic excepturi fugiat odio unde delectus quidem nostrum, culpa tempora expedita non.
+            Quae magnam animi quam ea beatae in aut explicabo reiciendis iusto amet illo distinctio iste nam sapiente
+            culpa rerum, inventore ut sit deserunt! Voluptatem quibusdam debitis non sunt quod sit!Lorem ipsum dolor sit
+            amet, consectetur adipisicing elit. Culpa quam odit quia sed quos voluptatum
+            praesentium optio, sunt quaerat dignissimos temporibus maxime assumenda aut. Facilis dolorum porro corrupti
+            cumque alias!
+            Tempora quis alias quasi velit! Necessitatibus, ea! Totam consequatur qui veniam, unde ipsum voluptatem
+            fugit, ex soluta ea exercitationem esse minus. Dicta odit nostrum, quis similique odio mollitia qui a.
+            Molestiae reprehenderit architecto minima est alias, eos excepturi officia doloremque delectus expedita
+            cupiditate rem nihil dignissimos non facere at earum hic eveniet. Aspernatur minima iure vitae quae
+            perferendis unde natus.
+            Vero, doloribus, voluptate iusto quibusdam assumenda eveniet nobis maxime facilis mollitia, illum non
+            recusandae. Quae ratione, velit cum ab dolorum inventore omnis, saepe suscipit, maiores harum sint error
+            nobis ex.
+            Mollitia ducimus cupiditate, dicta nesciunt quaerat dolor reprehenderit quo, animi qui illo aperiam maiores
+            deserunt consequuntur. Possimus, fugiat reiciendis, vero velit aut dolor fugit blanditiis minima harum culpa
+            dolorem animi.
+            Quidem consectetur rem harum aut facilis optio id aliquam expedita! Sit dicta eum ad veniam ab, voluptate
+            laborum odit ut numquam atque quasi eius animi iusto perspiciatis, maxime quod nobis!
+            Corporis optio excepturi est necessitatibus odit aliquid, doloremque ut officiis perferendis velit! Dolorem
+            ipsum, dolor, labore velit quas laborum delectus sint fugit tenetur, facilis deserunt consequatur beatae
+            architecto ipsam quod.
+            Sunt accusantium unde sequi distinctio tenetur sint accusamus mollitia laborum, natus nobis neque iusto,
+            ullam repellendus officiis beatae earum odio asperiores obcaecati hic? Blanditiis ratione quisquam natus
+            libero dolorem iste.
+            Praesentium est aperiam ipsam autem eum in nesciunt debitis. Quos placeat optio laborum. Minus ad soluta
+            mollitia porro hic excepturi fugiat odio unde delectus quidem nostrum, culpa tempora expedita non.
+            Quae magnam animi quam ea beatae in aut explicabo reiciendis iusto amet illo distinctio iste nam sapiente
+            culpa rerum, inventore ut sit deserunt! Voluptatem quibusdam debitis non sunt quod sit! Vero, doloribus,
+            voluptate iusto quibusdam assumenda eveniet nobis maxime facilis mollitia, illum non
+            recusandae. Quae ratione, velit cum ab dolorum inventore omnis, saepe suscipit, maiores harum sint error
+            nobis ex.
+            Mollitia ducimus cupiditate, dicta nesciunt quaerat dolor reprehenderit quo, animi qui illo aperiam maiores
+            deserunt consequuntur. Possimus, fugiat reiciendis, vero velit aut dolor fugit blanditiis minima harum culpa
+            dolorem animi.
+            Quidem consectetur rem harum aut facilis optio id aliquam expedita! Sit dicta eum ad veniam ab, voluptate
+            laborum odit ut numquam atque quasi eius animi iusto perspiciatis, maxime quod nobis!
+            Corporis optio excepturi est necessitatibus odit aliquid, doloremque ut officiis perferendis velit! Dolorem
+            ipsum, dolor, labore velit quas laborum delectus sint fugit tenetur, facilis deserunt consequatur beatae
+            architecto ipsam quod.
+            Sunt accusantium unde sequi distinctio tenetur sint accusamus mollitia laborum, natus nobis neque iusto,
+            ullam repellendus officiis beatae earum odio asperiores obcaecati hic? Blanditiis ratione quisquam natus
+            libero dolorem iste.
+            Praesentium est aperiam ipsam autem eum in nesciunt debitis. Quos placeat optio laborum. Minus ad soluta
+            mollitia porro hic excepturi fugiat odio unde delectus quidem nostrum, culpa tempora expedita non.
+            Quae magnam animi quam ea beatae in aut explicabo reiciendis iusto amet illo distinctio iste nam sapiente
+            culpa rerum, inventore ut sit deserunt! Voluptatem quibusdam debitis non sunt quod sit! Mollitia ducimus
+            cupiditate, dicta nesciunt quaerat dolor reprehenderit quo, animi qui illo aperiam maiores
+            deserunt consequuntur. Possimus, fugiat reiciendis, vero velit aut dolor fugit blanditiis minima harum culpa
+            dolorem animi.
+            Quidem consectetur rem harum aut facilis optio id aliquam expedita! Sit dicta eum ad veniam ab, voluptate
+            laborum odit ut numquam atque quasi eius animi iusto perspiciatis, maxime quod nobis!
+            Corporis optio excepturi est necessitatibus odit aliquid, doloremque ut officiis perferendis velit! Dolorem
+            ipsum, dolor, labore velit quas laborum delectus sint fugit tenetur, facilis deserunt consequatur beatae
+            architecto ipsam quod.
+            Sunt accusantium unde sequi distinctio tenetur sint accusamus mollitia laborum, natus nobis neque iusto,
+            ullam repellendus officiis beatae earum odio asperiores obcaecati hic? Blanditiis ratione quisquam natus
+            libero dolorem iste.
+            Praesentium est aperiam ipsam autem eum in nesciunt debitis. Quos placeat optio laborum. Minus ad soluta
+            mollitia porro hic excepturi fugiat odio unde delectus quidem nostrum, culpa tempora expedita non.
+            Quae magnam animi quam ea beatae in aut explicabo reiciendis iusto amet illo distinctio iste nam sapiente
+            culpa rerum, inventore ut sit deserunt! Voluptatem quibusdam debitis non sunt quod sit! Mollitia ducimus
+            cupiditate, dicta nesciunt quaerat dolor reprehenderit quo, animi qui illo aperiam maiores
+            deserunt consequuntur. Possimus, fugiat reiciendis, vero velit aut dolor fugit blanditiis minima harum culpa
+            dolorem animi.
+            Quidem consectetur rem harum aut facilis optio id aliquam expedita! Sit dicta eum ad veniam ab, voluptate
+            laborum odit ut numquam atque quasi eius animi iusto perspiciatis, maxime quod nobis!
+            Corporis optio excepturi est necessitatibus odit aliquid, doloremque ut officiis perferendis velit! Dolorem
+            ipsum, dolor, labore velit quas laborum delectus sint fugit tenetur, facilis deserunt consequatur beatae
+            architecto ipsam quod.
+            Sunt accusantium unde sequi distinctio tenetur sint accusamus mollitia laborum, natus nobis neque iusto,
+            ullam repellendus officiis beatae earum odio asperiores obcaecati hic? Blanditiis ratione quisquam natus
+            libero dolorem iste.
+            Praesentium est aperiam ipsam autem eum in nesciunt debitis. Quos placeat optio laborum. Minus ad soluta
+            mollitia porro hic excepturi fugiat odio unde delectus quidem nostrum, culpa tempora expedita non.
+            Quae magnam animi quam ea beatae in aut explicabo reiciendis iusto amet illo distinctio iste nam sapiente
+            culpa rerum, inventore ut sit deserunt! Voluptatem quibusdam debitis non sunt quod sit! Mollitia ducimus
+            cupiditate, dicta nesciunt quaerat dolor reprehenderit quo, animi qui illo aperiam maiores
+            deserunt consequuntur. Possimus, fugiat reiciendis, vero velit aut dolor fugit blanditiis minima harum culpa
+            dolorem animi.
+            Quidem consectetur rem harum aut facilis optio id aliquam expedita! Sit dicta eum ad veniam ab, voluptate
+            laborum odit ut numquam atque quasi eius animi iusto perspiciatis, maxime quod nobis!
+            Corporis optio excepturi est necessitatibus odit aliquid, doloremque ut officiis perferendis velit! Dolorem
+            ipsum, dolor, labore velit quas laborum delectus sint fugit tenetur, facilis deserunt consequatur beatae
+            architecto ipsam quod.
+            Sunt accusantium unde sequi distinctio tenetur sint accusamus mollitia laborum, natus nobis neque iusto,
+            ullam repellendus officiis beatae earum odio asperiores obcaecati hic? Blanditiis ratione quisquam natus
+            libero dolorem iste.
+            Praesentium est aperiam ipsam autem eum in nesciunt debitis. Quos placeat optio laborum. Minus ad soluta
+            mollitia porro hic excepturi fugiat odio unde delectus quidem nostrum, culpa tempora expedita non.
+            Quae magnam animi quam ea beatae in aut explicabo reiciendis iusto amet illo distinctio iste nam sapiente
+            culpa rerum, inventore ut sit deserunt! Voluptatem quibusdam debitis non sunt quod sit!</p>
+    </section>
+    <script>
+        function openNav() {
+            document.getElementById('myNav').style.width = "100%";
+        }
+        function closeNav() {
+            document.getElementById('myNav').style.width = "0%";
+        }
+        let burger = document.getElementById("myBurger");
+        let offSet = burger.offsetTop;
+        console.log(offSet);
+        function myStickyBurger() {
+            // Si le scroll de la fenetre est superieur 
+            // Ou égal à l'offSet du burger 
+            // Alors on lui ajoute la class sticky
+            // Sinon on l'enlève
+            if (window.pageYOffset >= offSet) {
+                burger.classList.add("sticky");
+            } else {
+                burger.classList.remove("sticky");
+            }
+        }
+
+        window.onscroll = function () {
+            myStickyBurger();
+        }
+
+        window.addEventListener("")
+    </script>
+</body>
+
+</html>
